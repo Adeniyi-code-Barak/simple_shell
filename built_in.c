@@ -33,7 +33,7 @@ int hsh_exit(char **args)
 
 /**
   * _cd - Changes directory
-  * args: array of words split
+  * @args: array of words split
   * Return: 0 on success
   */
 
@@ -46,12 +46,8 @@ int _cd(char **args)
 	else
 	{
 		if (chdir(args[1]) != 0)
-		{
 			perror("error");
-		}
 	}
 	return (1);
 
-
-
-    }
+}
